@@ -8,7 +8,7 @@ angular.module ( 'dl' ).controller( 'dlCtrl', function ( $scope, $http )
     
     $http.get ( url ).success ( function ( data )
     {
-        $scope.sr = JSON.parse (data );
+        $scope.sr = data;
     }).error ( function ()
     {
         $scope.error = true;
