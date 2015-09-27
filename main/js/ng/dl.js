@@ -9,6 +9,13 @@ angular.module ( 'dl' ).controller( 'dlCtrl', function ( $scope, $http )
     $http.get ( url ).success ( function ( data )
     {
         $scope.sr = data;
+        if ( $scope.sr.antiphon1.length === 0 )
+        {
+            $scope.sr.antiphon1 = [
+                "It is good to give praise unto the Lord, and to chant unto Thy name, O Most High",
+                "To proclaim in the morning Thy mercy and Thy truth by night"
+            ];
+        }
     }).error ( function ()
     {
         $scope.error = true;
@@ -34,11 +41,5 @@ angular.module ( 'dl' ).controller( 'dlCtrl', function ( $scope, $http )
         "Calling to remembrance our all-holy, immaculate, most blessed and glorious Lady Theotokos and ever virgin Mary, with all the Saints, let us commend ourselves and each other, and all our lives unto Christ our God.",
         "O Lord our God, Whose might is beyond compare, Whose glory is incomprehensible, Whose mercy is boundless, and Whose love towards mankind is ineffable: Do Thou, Thyself, O Master, in Thy tender compassion look down upon us and upon this holy house, and grant us and those who pray with us Thy rich mercies and compassions. For unto Thee are due all glory, honor, and worship, to the Father, and to the Son, and to the Holy Spirit, now and ever and unto ages of ages.",
     ];
-    if ( $scope.sr.antiphon1.length === 0 )
-    {
-        $scope.sr.antiphon1 = [
-            "It is good to give praise unto the Lord, and to chant unto Thy name, O Most High",
-            "To proclaim in the morning Thy mercy and Thy truth by night"
-        ];
-    }
+    
 });
