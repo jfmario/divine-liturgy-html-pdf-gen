@@ -78,7 +78,7 @@
             <div class="page-header">
                 <h2>Great Litany</h2>
             </div>
-            <div ng-repeat="greatLitanyLine in greatLitanyLines">
+            <div ng-repeat="greatLitanyLine in greatLitanyLines.slice (0, -2)">
                 <div class="row">
                     <div class="col-md-2">
                         <h4><span class="label label-danger">{{ priestName }}</span></h4>
@@ -116,6 +116,42 @@
                             <br>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>{{ greatLitanyLines [ -2 ] }}</p>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-primary">Congregants</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>To Thee, O Lord.</p>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>{{ greatLitanyLines [ -1 ] }}</p>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-primary">Congregants</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>Amen.</p>
+                    <br>
                 </div>
             </div>
         </div>
