@@ -4,10 +4,11 @@ angular.module ( 'dl' ).controller( 'dlCtrl', function ( $scope, $http )
 {
     var DB = window.localStorage;
     var url = 'http://oxdb.johnfmarion.com/query.php' + window.location.search;
+    $scope.sr = {};
     
     $http.get ( url ).success ( function ( data )
     {
-        $scope.sr = data;
+        $scope.sr = JSON.parse (data );
     }).error ( function ()
     {
         $scope.error = true;
