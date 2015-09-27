@@ -74,6 +74,39 @@
                 <p>Blessed is the Kingdom of the Father, and of the Son, and of the Holy Spirit: now and ever, and unto ages of ages.</p>
             </div>
         </div>
+        <div id="greatLitany">
+            <div class="page-header">
+                <h2>Great Litany</h2>
+            </div>
+            <div ng-repeat="greatLitanyLine in greatLitanyLines">
+                <div class="col-md-2">
+                    <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>{{ greatLitanyLine }}</p>
+                </div>
+                <div class="col-md-2">
+                    <h4><span class="label label-primary">Congregants</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>Lord, have mercy.</p>
+                </div>
+                <div ng-if=" line.indexOf ( 'For our Father' ) === 0 && includeExtraPrayer">
+                    <div class="col-md-2">
+                        <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                    </div>
+                    <div class="col-md-10">
+                        <p>{{ extraPrayer }}</p>
+                    </div>
+                    <div class="col-md-2">
+                        <h4><span class="label label-primary">Congregants</span></h4>
+                    </div>
+                    <div class="col-md-10">
+                        <p>Lord, have mercy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
     <script src="js/ng/dl.js"></script>
