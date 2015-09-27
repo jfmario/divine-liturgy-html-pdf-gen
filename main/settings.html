@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/yeti/bootstrap.min.css" rel="stylesheet">
+
+    <title>OXDB: Divine Liturgy PDF Generator</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="../" class="navbar-brand">OXDB</a>
+            </div>
+            <ul id="nav-ul" class="nav navbar-nav">
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="well">
+            <form class="form-horizontal">
+                <fieldset>
+                    
+                    <legend>Settings</legend>
+                    
+                    <span class="help-block">
+                        We have no login system. Settings will be stored with your browser.    
+                    </span>
+                    <div class="form-group">
+                        
+                        <label for="parishNameInput" class="col-lg-2 control-label">Parish Name</label>
+                        
+                        <div class="col-lg-10">
+                            <input id="parishNameInput" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        
+                        <label for="priestNameInput" class="col-lg-2 control-label">Priest Name</label>
+                        
+                        <div class="col-lg-10">
+                            <input id="priestNameInput" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        
+                        <label for="cityInput" class="col-lg-2 control-label">City</label>
+                        
+                        <div class="col-lg-7">
+                            <input id="cityInput" class="form-control" type="text">
+                        </div>
+                        
+                        <label for="stateInput" class="col-lg-1 control-label">State</label>
+                        
+                        <div class="col-lg-2">
+                            <input id="stateInput" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        
+                        <label for="bishopNameInput" class="col-lg-2 control-label">Bishop Name</label>
+                        
+                        <div class="col-lg-10">
+                            <input id="bishopNameInput" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        
+                        <label for="metropolitanNameInput" class="col-lg-2 control-label">Metropolitan Name</label>
+                        
+                        <div class="col-lg-10">
+                            <input id="metropolitanNameInput" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        
+                        <label for="parishHymnTitleInput" class="col-lg-2 control-label">Parish Hymn Title</label>
+                        
+                        <div class="col-lg-10">
+                            <input id="parishHymnTitleInput" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        
+                        <label for="parishHymnContentInput" class="col-lg-2 control-label">Parish Hymn Contents</label>
+                        
+                        <div class="col-lg-10">
+                            <textarea id="parishHymnContentInput" class="form-control" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        
+                        <label for="parishSaintTitleInput" class="col-lg-2 control-label">Parish Saint Full Title</label>
+                        
+                        <div class="col-lg-10">
+                            <input id="parishSaintTitleInput" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        
+                        <label class="col-lg-2 control-label">Optional Inclusions</label>
+                        
+                        <div class="col-lg-10">
+                            <label><input id="includeGreatDoxologyInput" type="checkbox"> Great Doxology</label><br>
+                            <label><input id="includeCatachumenPrayerInput" type="checkbox"> Catachumen Prayer</label><br>
+                            <label><input id="includeKissOfPeaceInput" type="checkbox"> Kiss of Peace</label><br>
+                            <label><input id="includeExtraPrayerInput" type="checkbox"> Following Extra Prayer</label><br>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        
+                        <label for="extraPrayerInput" class="col-lg-2 control-label">Extra Prayer</label>
+                        
+                        <div class="col-lg-10">
+                            <textarea id="extraPrayerInput" class="form-control" rows="2"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        
+                        <label for="parishNameListInput" class="col-lg-2 control-label">Parish Name List</label>
+                        
+                        <div class="col-lg-10">
+                            <textarea id="parishNameListInput" class="form-control" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        
+                        <label for="departedNameListInput" class="col-lg-2 control-label">Departed Name List</label>
+                        
+                        <div class="col-lg-10">
+                            <textarea id="departedNameListInput" class="form-control" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="btn-group btn-group-justified">
+                            <a class="btn btn-danger">Reset</a>
+                            <a class="btn btn-primary" onclick="applySettings()">Save</a>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/bs-help.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/settings.js"></script>
+    <script>
+        updateDisplay ();
+    </script>
+</body>
