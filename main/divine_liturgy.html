@@ -194,6 +194,519 @@
                 </div>
             </div>
         </div>
+        <div id="littleLitany1">
+            <div class="page-header">
+                <h2>Little Litany</h2>
+            </div>
+            <div ng-repeat="littleLitanyLine in littleLitanyLines">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                    </div>
+                    <div class="col-md-10">
+                        <p>{{ littleLitanyLine }}</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <h4><span class="label label-primary">Congregants</span></h4>
+                    </div>
+                    <div class="col-md-10" ng-if="littleLitanyLine.indexOf ( 'Theotokos' ) === -1">
+                        <p>Lord, have mercy.</p>
+                        <br>
+                    </div>
+                    <div class="col-md-10" ng-if="littleLitanyLine.indexOf ( 'Theotokos' ) !== -1">
+                        <p>To Thee, O Lord.</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>O Lord our God, save Thy people and bless Thine inheritance, preserve the fullness of Thy Church, sanctify those who love the beauty of Thy house, glorify them in recompense by Thy divine power, and forsake us not who put our trust in Thee. For Thine is the might, and Thine is the kingdom and the power and the glory, of the Father and of the Son and of the Holy Spirit, now and ever, and unto ages of ages.</p>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-primary">Congregants</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>Amen.</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div id="secondAntiphon">
+            <div class="page-header">
+                <h2>Second Antiphon</h2>
+            </div>
+            <div ng-repeat="secondAntiphonLine in sr.antiphon1">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h4><span class="label label-warning">Choir</span></h4>
+                    </div>
+                    <div class="col-md-10">
+                        <p>{{ secondAntiphonLine }}</p><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <h4><span class="label label-primary">Congregants</span></h4>
+                    </div>
+                    <div class="col-md-10">
+                        <p>{{ response2 }}<br>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-warning">Choir</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>Glory to the Father, and to the Son, and to the Holy Spirit.</p>
+                    <p>Now and ever and unto ages of ages. Amen.</p><br>
+                </div>
+            </div>
+        </div>
+        <div id="onlyBegottenHymn">
+            <div class="page-header">
+                <h2>Only Begotten Son</h2>
+            </div>
+            <div class="col-md-2">
+                <h4><span class="label label-success">Everyone</span></h4>
+            </div>
+            <div class="col-md-10">
+                <p>Only-begotten Son and Word of God, Thou who are immortal, and didst deign for our salvation to become incarnate of the holy Theotokos and ever-virgin Mary, without change becomming man, and Who was crucified, O Christ God, trampling down death by death, Thou who art one of the Holy Trinity, glorified together with the Father and the Holy Spirit, save us.</p>
+            </div>
+        </div>
+        <div id="littleLitany2">
+            <div class="page-header">
+                <h2>Little Litany</h2>
+            </div>
+            <div ng-repeat="littleLitanyLine in littleLitanyLines">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                    </div>
+                    <div class="col-md-10">
+                        <p>{{ littleLitanyLine }}</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <h4><span class="label label-primary">Congregants</span></h4>
+                    </div>
+                    <div class="col-md-10" ng-if="littleLitanyLine.indexOf ( 'Theotokos' ) === -1">
+                        <p>Lord, have mercy.</p>
+                        <br>
+                    </div>
+                    <div class="col-md-10" ng-if="littleLitanyLine.indexOf ( 'Theotokos' ) !== -1">
+                        <p>To Thee, O Lord.</p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>O Thou Who hast bestowed on us these common and united supplications and dost promise that whenever two or three are gather in Thy Name, Thou wilt grant their requests, fulfill now, O Lord, the desires and petitions of Thy servants as may be most expedient for them, granting us in this age the knowledge of Thy truth, and in the age to come, life everlasting. For Thou art a good God and lovest mankind, and unto Thee we ascribe glory, to the Father, and to the Son, and to Holy Spirit, now and ever, and unto ages of ages.</p>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-primary">Congregants</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>Amen.</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div id="thirdAntiphon">
+            <div class="page-header">
+                <h2>Third Antiphon</h2>
+            </div>
+            <div ng-if="sr.antiphon3.length > 0">
+                <div ng-repeat="thirdAntiphonLine in sr.antiphon3">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h4><span class="label label-warning">Choir</span></h4>
+                        </div>
+                        <div class="col-md-10">
+                            <p>{{ thirdAntiphonLine }}</p><br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h4><span class="label label-primary">Congregants</span></h4>
+                        </div>
+                        <div class="col-md-10">
+                            <p>{{ response3 }}<br>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <h4><span class="label label-warning">Choir</span></h4>
+                    </div>
+                    <div class="col-md-10">
+                        <p>Glory to the Father, and to the Son, and to the Holy Spirit.</p>
+                        <p>Now and ever and unto ages of ages. Amen.</p><br>
+                    </div>
+                </div>
+            </div>
+            <div ng-if="sr.antiphon3.length == 0">
+                <div class="col-md-2">
+                    <h4><span class="label label-warning">Everyone</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>In Thy Kingdom remember us, O Lord, when Thou comest in Thy Kingdom.</p>
+                    <p>Blessed are the poor in spirit, for theirs is the kingdom of the heavens.</p>
+                    <p>Blessed are those who mourn, for they shall be comforted.</p>
+                    <p>Blessed are the meek, for they shall inherit the earth.</p>
+                    <p>Blessed are those who hunger and thirst for righteousness, for they shall be filled.</p>
+                    <p>Blessed are the merciful, for they shall obtain mercy.</p>
+                    <p>Blessed are the pure in heart, for they shall see God.</p>
+                    <p>Blessed are the peacemakers, for they shall be called sons of God.</p>
+                    <p>Blessed are those who are persecuted for righteousness sake, for theirs is the kingdom of heaven.</p>
+                    <p>Blessed are you when men revile you and persecute you and shall say all manner of evil against you falsely for my sake. Rejoice and be exceedingly glad, for your reward is great in heaven.</p>
+                    <p>Glory to the Father, and to the Son, and to the Holy Spirit, now and ever, and unto ages of ages. Amen.</p>
+                </div>
+            </div>
+        </div>
+        <div id="holyGospelEntrance">
+            <div class="page-header">
+                <h2>Entrance of the Holy Gospel</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-warning">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>Wisdom! Let us attend.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-primary">Congregants</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p ng-if="sr.eisodikon.length > 0">{{ sr.eisodikon }}</p>
+                    <p ng-if="sr.eisodikon.length == 0">Come, let us worship and fall down before Christ. Save us, O Son of God, who art risen from the dead, who sing to Thee, Alleluiah!</p>
+                </div>
+            </div>
+        </div>
+        <div id="troparionResurrection">
+            <div class="page-header">
+                <h2>Troparion of the Resurrection, Tone {{ tone }}</h2>
+            </div>
+            <div class="col-md-2">
+                <h4><span class="label label-success">Everyone</span></h4>
+            </div>
+            <div class="col-md-10">
+                <p>{{ sr.resurrectionTroparia }}</p>
+            </div>
+        </div>
+        <div id="apolytikia" ng-if="sr.apolytikions.length > 0">
+            <div class="page-header">
+                <h2>Festal Troparia</h2>
+            </div>
+            <div class="col-md-2">
+                <h4><span class="label label-warning">Choir</span></h4>
+            </div>
+            <div class="col-md-10">
+                <p ng-repeat="apolytikion in sr.apolytikions">
+                    {{ apolytikion }}
+                </p>
+            </div>
+        </div>
+        <div id="parishHymn">
+            <div class="page-header">
+                <h2>{{ parishHymnTitle }}</h2>
+            </div>
+            <div class="col-md-2">
+                <h4><span class="label label-success">Everyone</span></h4>
+            </div>
+            <div class="col-md-10">
+                <p>{{ parishHymnContent }}</p>
+            </div>
+        </div>
+        <div id="kontakia">
+            <div class="page-header">
+                <h2>Kontakion</h2>
+            </div>
+            <div class="col-md-2">
+                <h4><span class="label label-warning">Choir</span></h4>
+            </div>
+            <div class="col-md-10">
+                <p ng-if="sr.kontakia.length > 0">{{ sr.kontakia }}</p>
+                <p ng-if-"sr.kontakia.length == 0">O Protection of Christians that cannot be put to shame, mediation unto the Creator most constant, O forsake not the suppliant voice of those who have sinned; but be thou quick, O good one, to come unto our aid, who in faith cry unto thee. Hasten to intercession and speed thou to supplication, thou who dost ever protect, Theotokos, those who honor thee.</p>
+            </div>
+        </div>
+        <div id="preTrisagion">
+            <div class="page-header">
+                <h2>Before the Trisagion</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>Let us pray to the Lord.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-primary">Congregants</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>Lord, have mercy.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>O holy God, Who rest in Thy Holy Place, Who are hymned by the Seraphim with the thrice-holy cry, and glorified by the Cherubin, and worshipped by every heavenly Power, Who out of nothingness hast brought all things into being, Who has created man after Thine own image and likeness and hast adorned Him with Thine every gift, Who givest to him that asks wisdom and understanding, Who despises not the sinner, but hast appointed repentance unto salvation, Who hast vouchedsafed unto us, Thy humble and unworthy servants even in this hour to stand before the glory of Thy holy Altar and to offer the worship and praise which are due to Thee. O Master, accept even from the mouths of us sinners the Hymn of the Trisagion, and visit us in Thy goodness. Forgive us every transgression both voluntary and involuntary, sanctify our souls and bodies, and grant us to serve Thee in holiness all the days of our lives, through the intercessions of the holy Theotokos and of all the saints who from the beginning of the world have been well-pleasing unto Thee.</p>
+                    <p>For Thou are holy, O God, and to Thee we ascribe glory, to the Father, and to the Son, and to the Holy Spirit, now and ever and unto ages of ages.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-primary">Congregants</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>Amen.</p>
+                </div>
+            </div>
+        </div>
+        <div id="trisagion">
+            <div class="page-header">
+                <h2>Trisagion</h2>
+            </div>
+            <div class="col-md-2">
+                <h4><span class="label label-success">Everyone</span></h4>
+            </div>
+            <div class="col-md-10">
+                <div ng-if="sr.trisagion.length > 0">
+                    <p>{{ sr.trisagion }}</p>
+                    <p>{{ sr.trisagion }}</p>
+                    <p>{{ sr.trisagion }}</p>
+                </div>
+                <div ng-if="sr.trisagion.length == 0">
+                    <p>Holy God, Holy Mighty, Holy Immortal, have mercy on us.</p>
+                    <p>Holy God, Holy Mighty, Holy Immortal, have mercy on us.</p>
+                    <p>Holy God, Holy Mighty, Holy Immortal, have mercy on us.</p>
+                </div>
+                <p>Glory to the Father, and to the Son, and to the Holy Spirit. Now, and ever, and unto ages of ages. Amen.</p>
+                <p ng-if="sr.trisagion.length == 0">Holy Immortal, have mercy on us.</p><br />
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-sm-10">
+                    <p>With strength!</p><br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <h4><span class="label label-primary">Congregants</span></h4>
+                </div>
+                <div class="col-sm-10">
+                    <p ng-if="sr.trisagion.length > 0">{{ sr.trisagion }}</p>
+                    <p ng-if="sr.trisagion.length == 0">Holy God, Holy Mighty, Holy Immortal, have mercy on us.</p>
+                </div>
+            </div>
+        </div>
+        <div id="prokeimenon">
+            <div class="page-header">
+                <h2>Prokeimenon</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-sm-10">
+                    <p>Let us attend the prokeimenon.</p><br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <h4><span class="label label-info">Reader</span></h4>
+                </div>
+                <div class="col-sm-10">
+                    <p>{{ sr.prokeimenon [0] + ' ' + sr.prokeimenon [1] }}</p><br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-sm-10">
+                    <p>{{ sr.prokeimenon [0] + ' ' + sr.prokeimenon [1] }}</p><br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <h4><span class="label label-info">Reader</span></h4>
+                </div>
+                <div class="col-sm-10">
+                    <p>{{ sr.prokeimenon [2] }}</p><br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-sm-10">
+                    <p>{{ sr.prokeimenon [0] + ' ' + sr.prokeimenon [1] }}</p><br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <h4><span class="label label-info">Reader</span></h4>
+                </div>
+                <div class="col-sm-10">
+                    <p>{{ sr.prokeimenon [0] }}</p><br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-sm-10">
+                    <p>{{ sr.prokeimenon [1] }}</p><br />
+                </div>
+            </div>
+        </div>
+        <div id="epistleReading">
+            <div class="page-header">
+                <h2>Epistle Reading</h2>
+            </div>
+            <div ng-if="sr.epsitle.length == 0">
+                <div class="alert alert-info">
+                    <p><b>Oops!</b> We could not determine the correct epistle reading.</p>
+                </div>
+            </div>
+            <div ng-if="sr.epistle.length > 0">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                    </div>
+                    <div class="col-md-10">
+                        <p>Wisdom!</p><br />
+                    </div>
+                </div>
+                <div ng-repeat="epistleReading in sr.epistle">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h4><span class="label label-info">Reader</span></h4>
+                        </div>
+                        <div class="col-md-10">
+                            <p>The reading is from {{ epistleReading.bookLongName }} [ {{ epistleReading.ref }} ].</p><br />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                        </div>
+                        <div class="col-md-10">
+                            <p>Let us attend!</p><br />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h4><span class="label label-info">Reader</span></h4>
+                        </div>
+                        <div class="col-md-10">
+                            {{ epistleReading.text }}
+                            <br />
+                            [{{ epistleReading.ver }}]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="alleluia" ng-if="sr.alleluia.length > 0">
+            <div class="page-header">
+                <h2>Alleluia</h2>
+            </div>
+            <div ng-repeat="alleluiaVerse in sr.alleluia">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h4><span class="label label-warning">Choir</span></h4>
+                    </div>
+                    <div class="col-md-10">
+                        <p>{{ alleluiaVerse }}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <h4><span class="label label-primary">Congregants</span></h4>
+                    </div>
+                    <div class="col-md-10">
+                        <p>Alleluia. Alleluia. Alleluia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="gospelReading">
+            <div class="page-header">
+                <h2>Gospel Reading</h2>
+            </div>
+            <div ng-if="sr.gospel.length == 0">
+                <div class="alert alert-danger">
+                    <p><b>Oops!</b> We could not determine the correct gospel reading.</p>
+                </div>
+            </div>
+            <div ng-if="sr.gospel.length > 0">
+                <div ng-repeat="gospelReading in sr.gospel">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                        </div>
+                        <div class="col-md-10">
+                            <p>The reading is from {{ gospelReading.bookLongName }} [ {{ gospelReading.ref }} ].</p><br />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h4><span class="label label-primary">Congregants</span></h4>
+                        </div>
+                        <div class="col-md-10">
+                            <p>Glory to Thee, O Lord, glory to Thee.</p><br />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                        </div>
+                        <div class="col-md-10">
+                            <div>{{ gospelReading.text }}</div><br />
+                            [ {{ gospelReading.ver }} ]
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h4><span class="label label-primary">Congregants</span></h4>
+                        </div>
+                        <div class="col-md-10">
+                            <p>Glory to Thee, O Lord, glory to Thee.</p><br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
     <script src="js/ng/dl.js"></script>

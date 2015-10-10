@@ -16,6 +16,18 @@ angular.module ( 'dl' ).controller( 'dlCtrl', function ( $scope, $http )
                 "To proclaim in the morning Thy mercy and Thy truth by night"
             ];
         }
+        if ( $scope.sr.antiphon2.length === 0 )
+        {
+            $scope.sr.antiphon2 = [
+                "The Lord is King, He is clothed with majesty. The Lord is clothed with strength and He hath girt Himself.",
+                "For He established the world which shall not be shaken.",
+                "Holiness becometh Thy house, O Lord, unto length of days."
+            ];
+        }
+        if ( $scope.sr.response2 === '' )
+        {
+            $scope.sr.response2 = "O Son of God, who rose from the dead, save us who sing to Thee, Alleluia!";
+        }
     }).error ( function ()
     {
         $scope.error = true;
@@ -41,5 +53,9 @@ angular.module ( 'dl' ).controller( 'dlCtrl', function ( $scope, $http )
         "Calling to remembrance our all-holy, immaculate, most blessed and glorious Lady Theotokos and ever virgin Mary, with all the Saints, let us commend ourselves and each other, and all our lives unto Christ our God.",
         "O Lord our God, Whose might is beyond compare, Whose glory is incomprehensible, Whose mercy is boundless, and Whose love towards mankind is ineffable: Do Thou, Thyself, O Master, in Thy tender compassion look down upon us and upon this holy house, and grant us and those who pray with us Thy rich mercies and compassions. For unto Thee are due all glory, honor, and worship, to the Father, and to the Son, and to the Holy Spirit, now and ever and unto ages of ages.",
     ];
-    
+    $scope.littleLitanyLines [
+        "gain and again, in peace, let us pray to the Lord.",
+        "Help us, save us, have mercy on us, and keep us, O God, by Thy grace.",
+        "Calling into remembrance our all-holy, immaculate, most blessed and glorious Lady Theotokos and ever-virgin Mary, with all the saints, let us commend ourselves and each other and all our life unto Christ our God."
+    ];
 });
