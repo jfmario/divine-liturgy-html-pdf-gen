@@ -53,7 +53,7 @@ angular.module ( 'dl' ).controller( 'dlCtrl', function ( $scope, $http )
         "Calling to remembrance our all-holy, immaculate, most blessed and glorious Lady Theotokos and ever virgin Mary, with all the Saints, let us commend ourselves and each other, and all our lives unto Christ our God.",
         "O Lord our God, Whose might is beyond compare, Whose glory is incomprehensible, Whose mercy is boundless, and Whose love towards mankind is ineffable: Do Thou, Thyself, O Master, in Thy tender compassion look down upon us and upon this holy house, and grant us and those who pray with us Thy rich mercies and compassions. For unto Thee are due all glory, honor, and worship, to the Father, and to the Son, and to the Holy Spirit, now and ever and unto ages of ages.",
     ];
-    $scope.littleLitanyLines [
+    $scope.littleLitanyLines =  [
         "gain and again, in peace, let us pray to the Lord.",
         "Help us, save us, have mercy on us, and keep us, O God, by Thy grace.",
         "Calling into remembrance our all-holy, immaculate, most blessed and glorious Lady Theotokos and ever-virgin Mary, with all the saints, let us commend ourselves and each other and all our life unto Christ our God."
