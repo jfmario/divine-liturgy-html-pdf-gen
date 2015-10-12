@@ -1,5 +1,5 @@
 
-var app = angular.module ( 'dl', [] );
+var app = angular.module ( 'dl', [ 'ngSanitize' ] );
 angular.module ( 'dl' ).controller( 'dlCtrl', function ( $scope, $http, $sce )
 {
     var DB = window.localStorage;
