@@ -628,7 +628,7 @@
                             <h4><span class="label label-info">Reader</span></h4>
                         </div>
                         <div class="col-md-10">
-                            {{ epistleReading.text }}
+                            <div ng-bind-html="epistleReading.text"></div>
                             <br />
                             [{{ epistleReading.ver }}]
                         </div>
@@ -692,7 +692,7 @@
                             <h4><span class="label label-danger">{{ priestName }}</span></h4>
                         </div>
                         <div class="col-md-10">
-                            <div>{{ gospelReading.text }}</div><br />
+                            <div ng-bind-html="gospelReading.text"></div><br />
                             [ {{ gospelReading.ver }} ]
                         </div>
                     </div>
