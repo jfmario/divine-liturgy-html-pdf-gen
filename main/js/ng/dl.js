@@ -1,6 +1,6 @@
 
 var app = angular.module ( 'dl', [] );
-angular.module ( 'dl' ).controller( 'dlCtrl', function ( $scope, $http )
+angular.module ( 'dl' ).controller( 'dlCtrl', function ( $scope, $http, $sce )
 {
     var DB = window.localStorage;
     var url = 'http://oxdb.johnfmarion.com/query.php' + window.location.search;
@@ -9,6 +9,7 @@ angular.module ( 'dl' ).controller( 'dlCtrl', function ( $scope, $http )
     $http.get ( url ).success ( function ( data )
     {
         $scope.sr = data;
+        $scope.sr.gospelReading.text = $sce.trustAsHtml ( $scope.sr.gospelReading.text );
         if ( $scope.sr.antiphon1.length === 0 )
         {
             $scope.sr.antiphon1 = [
