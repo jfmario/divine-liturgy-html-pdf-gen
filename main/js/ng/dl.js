@@ -9,7 +9,10 @@ angular.module ( 'dl' ).controller( 'dlCtrl', function ( $scope, $http, $sce )
     $http.get ( url ).success ( function ( data )
     {
         $scope.sr = data;
-        $scope.sr.gospelReading.text = $sce.trustAsHtml ( $scope.sr.gospelReading.text );
+        $scope.getGospelReading = function ()
+        {
+            return $sce.trustAsHtml ( $scope.sr.gospelReading.text );
+        }
         if ( $scope.sr.antiphon1.length === 0 )
         {
             $scope.sr.antiphon1 = [
