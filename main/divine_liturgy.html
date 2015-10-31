@@ -725,8 +725,194 @@
                 </div>
             </div>
         </div>
-        
-        <!--next-->
+        <div id="homily">
+            <div class="page-header">
+                <h2>The Homily</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-primary">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p><i>[ {{ priestName }} delivers the homily. ]</i>.</p><br />
+                </div>
+            </div>
+        </div>
+        <div id="litanyFerventSupplication">
+            <div class="page-header">
+                <h2>Litany of Fervent Supplication</h2>
+            </div>
+            <div ng-repeat="ferventLitanyLine in ferventLitanyLines.slice (0, -1)">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                    </div>
+                    <div class="col-md-10">
+                        <p>{{ ferventLitanyLine }}</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <h4><span class="label label-primary">Congregants</span></h4>
+                    </div>
+                    <div class="col-md-10">
+                        <p>Lord, have mercy. Lord, have mercy. Lord, have mercy.</p>
+                        <br />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>{{ ferventLitanyLines [ ferventLitanyLines.length - 1 ] }}</p>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-primary">Congregants</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>Amen.</p>
+                </div>
+            </div>
+        </div>
+        <div id="catachumenPrayer" ng-if="includeCatachumenPrayer == true">
+            <div class="page-header">
+                <h2>Prayer for the Catachumens</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>Let us the faithful pray for the catechumens.</p>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-primary">Congregants</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>Lord, have mercy.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>O Lord our God, Who dwellest on high and regardest the humble of heart; Who has sent forth as the salvation of the race of men Thine Only-begotten Son and God, our Lord Jesus Christ: look down upon Thy servants who have bowed their necks before Thee. Make them worthy in due season of the laver of regeneration, the forgiveness of sins, and the robe of incorruption. Unit them to Thy Holy, Catholic, and Apostolic Church, and number them with Thine elect flock, that with us they may glorify Thine all honorable and majestic Name, of the Father, and of the Son, and of the Holy Spirit, now and ever and unto ages of ages.</p>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-primary">Congregants</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>Amen.</p>
+                </div>
+            </div>
+        </div>
+        <div id="faithfulPrayer" ng-if="includeCatachumenPrayer == true">
+            <div class="page-header">
+                <h2>Prayer of the Faithful</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>Let us the faithful pray to the Lord.</p><br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-primary">Congregants</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>Lord, have mercy.</p><br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>Help us, save us, have mercy on us, and keep us, O God, by Thy grace.</p><br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-primary">Congregants</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>Lord, have mercy.</p><br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>Again and oftentimes we fall down before Three and beseech Thee, O good One Who lovest mankind, that, looking down upon our petition, Thou wilt cleanse our souls and bodies from every defilement of flesh or spirit, and grant us to stand blamelessly and without condemnation before Thy holy Altar. Grant also, O God, to those who pray with us growth in life, faith, and spiritual understanding. Grant them always blamelessly to serve Thee with fear and love, and to partake without condemnation of Thy Holy Mysteries, and to be accounted worthy of Thy heavenly Kingdom. That guarded always by Thy might, we may ascribe glory unto Thee - to the Father, and to the Son, and to the Holy Spirit, now and ever and unto ages of ages.</p><br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-primary">Congregants</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>Amen.</p><br />
+                </div>
+            </div>
+        </div>
+        <div id="cherubicHymn">
+            <div class="page-header">
+                <h2>Cherubic Hymn</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-warning">Choir</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>We who mystically represent the Cherubim, and who sing to the life-giving Trinity the thrice-holy hymn, let us now lay aside all earthly care.</p><br />
+                    <p>We who mystically represent the Cherubim, and who sing to the life-giving Trinity the thrice-holy hymn, let us now lay aside all earthly care.</p><br />
+                </div>
+            </div>
+        </div>
+        <div id="greatEntrance">
+            <div class="page-header">
+                <h2>Great Entrance</h2>
+            </div>
+            <div ng-repeat="greatEntranceLine in greatEntranceLines">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                    </div>
+                    <div class="col-md-10">
+                        <p>{{ greatLitanyLine }}</p><br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <h4><span class="label label-primary">Congregants</span></h4>
+                    </div>
+                    <div class="col-md-10">
+                        <p>Amen.</p><br />
+                        <p ng-if="greatLitanyLine.indexOf ( 'now and ever' ) !== -1">
+                            That we may receive the King of all, who comes invisibly upborne by the angelic hosts. Alleluia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--next: look into pre prothesis-->
     </div>
     
     <script src="js/ng/dl.js"></script>

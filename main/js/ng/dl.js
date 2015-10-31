@@ -54,8 +54,25 @@ angular.module ( 'dl' ).controller( 'dlCtrl', function ( $scope, $http, $sce )
         "O Lord our God, Whose might is beyond compare, Whose glory is incomprehensible, Whose mercy is boundless, and Whose love towards mankind is ineffable: Do Thou, Thyself, O Master, in Thy tender compassion look down upon us and upon this holy house, and grant us and those who pray with us Thy rich mercies and compassions. For unto Thee are due all glory, honor, and worship, to the Father, and to the Son, and to the Holy Spirit, now and ever and unto ages of ages.",
     ];
     $scope.littleLitanyLines =  [
-        "gain and again, in peace, let us pray to the Lord.",
+        "Again and again, in peace, let us pray to the Lord.",
         "Help us, save us, have mercy on us, and keep us, O God, by Thy grace.",
         "Calling into remembrance our all-holy, immaculate, most blessed and glorious Lady Theotokos and ever-virgin Mary, with all the saints, let us commend ourselves and each other and all our life unto Christ our God."
+    ];
+    $scope.ferventLitanyLines = [
+        "Let us say with all our soul and with all our mind, let us say: O Lord Almighty, the God of our fathers, we pray Thee, harken and have mercy.",
+        "Have mercy upon us, O God, according to Thy great goodness, we pray The harken and have mercy.",
+        "Again we pray for pious and Orthodox Christians, for our Metropolitan <metropolitan>, for the priests, deacons, and all other clergy, and for all our brethren in Christ.",
+        "Again we pray for mercy, life, peace, health, salvation, and visitation for the servants of God, and for the pardon and remission of their sins.",
+        "Again we pray for the blessed and ever-memorable founders of this holy temple, and for all our fathers and brethren, the Orthodox departed this life before us, who here and in all the world lie asleep in the Lord, and for the Orthodox servants of God departed this life, and for the pardon and remission of their sins.",
+        "Again we pray for those who bear fruit and do good works in thsi holy and all-venerable temple, for those who serve and those who sing, and for all the people here present, who await Thy great and rich mercy.",
+        "O Lord our God, accept this fervent supplication of Thy servants, and have mercy upon us according to the multitude of Thy mercy, and send down Thy compassions upon us and upon all Thy people, who await the rich mercy that cometh from Thee. For Thou art a merciful God and lovest mankind, and unto Thee we ascribe glory, to the Father, and to the Son, and to the Holy Spirit, now and ever and unto ages of ages."
+    ];
+    $scope.greatEntranceLines = [
+        "All of you, the Lord God remember in His Kingdom, always, now and ever, and unto ages of ages.",
+        "Our Metropolitan " + $scope.metropolitanName + ", the Lord God remember in His Kingdom, always, now and ever, and unto ages of ages.",
+        "The President of the United States and all civil authorities, and our Armed Forces everywhere, the Lord God remember in His Kingdom, always, now and ever, and unto ages of ages.",
+        "The Orthodox servants of God: " + $scope.parishNameList + "... that they may have mercy, life, peace, health, salvation, and visitation, and pardon and forgiveness of sins; the Lord God remember in His Kingdom, always, now and ever, and unto ages of ages.",
+        "The Orthodox servants of God departed this life: " + $scope.departedNameList + "... the Lord God remember in His Kingdom, always, now and ever, and unto ages of ages.",
+        "All of us, the Lord God remember in His Kingdom, always, now and ever, and unto ages of ages."
     ];
 });
