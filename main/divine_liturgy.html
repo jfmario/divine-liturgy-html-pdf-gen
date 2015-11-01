@@ -919,17 +919,78 @@
             </div>
             <div class="row">
                 <div class="col-md-2">
+                    <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>The noble Joseph, when he had taken down Thine immaculate body from the tree, wrapped it in pure linen and spices and, sorrowing, placed it in a new tomb.</p>
+                    <p>In the grave with the body but in Hades with the soul as God; in paradise with the thief, and on the throne with the Father and the Spirit wast Thou, O Christ, filling all things, Thyself uncircumscribed.</p>
+                    <p>As life-bearing, as more splendid than paradise, and more radiant than any royal chamber, O Christ, is shown forth Thy tomb, the fountain of our resurrection.</p>
+                    <p>Do good, O Lord, in Thy good pleasure unto Zion, and let the walls of Jerusalem be built. Then shalt Thou be pleased with a sacrifice of righteousness, with oblation and whole burnt offerings. Then shall they offer bullocks upon Thine altar.</p>
+                </div>
+            </div>
+        </div>
+        <div id="litanyProthesis">
+            <div class="page-header">
+                <h2>Litany of the Prothesis</h2>
+            </div>
+            <div ng-repeat="prothesisLine in prothesisLines.slice (0, -2)">
+                <div class="row">
+                    <div class="col-md-2">
                         <h4><span class="label label-danger">{{ priestName }}</span></h4>
                     </div>
                     <div class="col-md-10">
-                        <p>The noble Joseph, when he had taken down Thine immaculate body from the tree, wrapped it in pure linen and spices and, sorrowing, placed it in a new tomb.</p>
-                        <p>In the grave with the body but in Hades with the soul as God; in paradise with the thief, and on the throne with the Father and the Spirit wast Thou, O Christ, filling all things, Thyself uncircumscribed.</p>
-                        <p>As life-bearing, as more splendid than paradise, and more radiant than any royal chamber, O Christ, is shown forth Thy tomb, the fountain of our resurrection.</p>
-                        <p>Do good, O Lord, in Thy good pleasure unto Zion, and let the walls of Jerusalem be built. Then shalt Thou be pleased with a sacrifice of righteousness, with oblation and whole burnt offerings. Then shall they offer bullocks upon Thine altar.</p>
+                        <p>{{ prothesisLine }}</p>
+                        <br>
                     </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <h4><span class="label label-primary">Congregants</span></h4>
+                    </div>
+                    <div class="col-md-10">
+                        <p>Lord, have mercy.</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>{{ prothesisLines [ prothesisLines.length - 2 ] }}</p>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-primary">Congregants</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>To Thee, O Lord.</p>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>{{ prothesisLines [ prothesisLines.length - 1 ] }}</p>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-primary">Congregants</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>Amen.</p>
+                </div>
             </div>
         </div>
-        <!--next: look into pre prothesis-->
+
+
     </div>
     
     <script src="js/ng/dl.js"></script>

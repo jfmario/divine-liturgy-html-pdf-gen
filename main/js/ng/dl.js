@@ -75,4 +75,19 @@ angular.module ( 'dl' ).controller( 'dlCtrl', function ( $scope, $http, $sce )
         "The Orthodox servants of God departed this life: " + $scope.departedNameList + "... the Lord God remember in His Kingdom, always, now and ever, and unto ages of ages.",
         "All of us, the Lord God remember in His Kingdom, always, now and ever, and unto ages of ages."
     ];
+    $scope.prothesisLines = [
+        "Let us complete our prayer unto the Lord.",
+        "For the precious gifts now set forth, let us pray to the Lord.",
+        "For this holy house, and those who with faith, reverence, and fear of God enter therein, let us pray to the Lord.",
+        "For our deliverance from all tribulation, wrath, danger, and necessity, let us pray to the Lord.",
+        "Help us; save us; have mercy on us; and keep us, O God, by Thy grace.",
+        "That the whole day may be perfect, holy, peaceful, and sinless, let us ask of the Lord.",
+        "An angel of peace, a faithful guide, a guardian of our souls and bodies, let us ask of the Lord.",
+        "Pardon and forgiveness of our sins and transgressions, let us ask of the Lord.",
+        "All things good and profitable for our souls and peace for the world, let us ask of the Lord.",
+        "That we may complete the remaining time of our life in peace and repentance, let us ask of the Lord.",
+        "A Christian ending to our life, painless, blameless, and peaceful, and a good defense before the fearful judgment Seat of Christ, let us ask of the Lord.",
+        "Calling to remembrance our all-holy, immaculate, most blessed and glorious Lady Theotokos and ever-virgin Mary, with all the Saints, let us commend ourselves and each other, and all our life unto Christ our God.",
+        "O Lord Gold Almighty, Who alone art holy, Who dost accept a sacrifice of praise from those who call upon Thee with their whole heart: Receive also the prayer of sinners, and lead us to Thy holy altar, and enable us to offer unto Thee gifts and spiritual sacrifices for our sins and for the ignorance of the people, and make us worthy to find grace in Thy sight, that our sacrifice may be acceptable unto Thee and that the good Spirit of Thy grace may rest upon us and upon these gifts here spread forth and upon all Thy people. Through the compassions of Thine Only-Begotten Son, with Whom Thou art blessed, together with Thine all-holy, good, and life-giving Spirit, now and ever, and unto ages of ages."
+    ];
 });
