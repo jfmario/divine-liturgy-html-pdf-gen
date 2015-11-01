@@ -1252,60 +1252,55 @@
                     <p>{{ sr.theotokion }}</p><br />
                 </div>
             </div>
-            <!--
-
-        quickPriestText(doc, "That to those who shall partake of these " +
-                "Gifts, they may be unto the cleansing of soul, unto the " +
-                "forgiveness of sins, unto the communion of Thy Holy Spirit, " +
-                "unto the fulfillment of the Kingdom of Heaven, unto " +
-                "boldness toward Thee, and not unto judgment or unto " +
-                "condemnation. And again we offer unto Thee this reasonable " +
-                "worship for all those who in faith have gone before us to " +
-                "their rest: Forefathers, Fathers, Patriarchs, Prophets, " +
-                "Apostles, Preachers, Evangelists, Martyrs, Confessors, " +
-                "Ascetics, and every righteous spirit which has completed " +
-                "this life in faith, especially our all-holy, immaculate, " +
-                "most-blessed, and glorious Lady Theotokos and ever-virgin " +
-                "Mary.");
-        quickAdd(doc, serverResponse.getTheotokion());
-        quickPriestText(doc, "And for the hoy Prophet, Forerunner, and " +
-                "Baptist John, the holy, glorious, and all-laudable Apostles, " +
-                "Saint [N], whose memory we celebrate, and all Thy saints " +
-                "at whose supplications look down upon us, O God. And be " +
-                "mindful of all those who have fallen asleep before us in " +
-                "hope of Resurrection unto life eternal, and grant them " +
-                "rest, O our god, where the light of thy countenance shines " +
-                "upon them. And again we beseech Thee: be mindful, O Lord, of " +
-                "every Bishop of the Orthodox, who rightly teaches the word " +
-                "of Thy truth, of all the priesthood, the diaconate in Christ, " +
-                "and of every preistly and monastic order. And again we offer " +
-                "unto Thee this reasonable worship, for the whole world, for " +
-                "the holy, catholic, and apostolic Church, for those who live " +
-                "in chastity and holiness of life, for all civil authorities. " +
-                "and our armed forces everywhere, grant them, O Lord, peaceful " +
-                "times, that we, in their tranquility, may lead a calm and " +
-                "peaceful life in all godliness and sanctity.");
-        quickPriestText(doc, "Among the first be mindful, O Lord, of our " + 
-                "Metropolitan " + settings.getMetropolitan() + ", whom do Thou " +
-                "grant Thy holy churches in peace, safety, honor, health, and " +
-                "length of days, and rightly dividing the word of Thy truth.");
-        quickAdd(doc, "And of all mankind.");
-        quickPriestText(doc, "Be mindful, O Lord, of this city in which we " +
-                "dwell, and of every city and countryside, and of those who " +
-                "in faith dwell in them. Be mindful, O Lord, of those who travel " +
-                "by sea, land, and air; of the sick, the suffering, captives, " +
-                "and their salvation. Be mindful, O Lord, of those who bear " +
-                "fruit and do good works in Thy holy churches, and who " +
-                "remember the poor, and upon us all send forth Thy mercies." +
-                "And grant us with one mouth and one heart to glorify and " +
-                "priase Thine all-honorable and majestic name, of the Father, " +
-                "and of the Son, and of the Holy Spirit, now and ever, and unto " +
-                "ages of ages.");
-        quickAdd(doc, "Amen.");
-        quickPriestText(doc, "And the mercies of our great God and Savior Jesus " +
-                "Christ be with all of you.");
-        quickAdd(doc, "And with thy spirit.");
--->
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>And for the holy Prophet, Forerunner, and Baptist John, the holy, glorious, and all-laudable Apostles, Saint [N], whose memory we celebrate, and all Thy saints at whose supplications look down upon us, O God. And be mindful of all those who have fallen asleep before us in hope of Resurrection unto life eternal, and grant them rest, O our God, where the light of Thy countenance shines upon them. And again we beseech Thee: be mindful, O Lord, of every Bishop of the Orthodox, who rightly teaches the word of Thy Truth, of all the priesthood, the diaconate in Christ, and of every priestly and monastic order. And again we offer unto Thee this reasonable worship, for the whole world, for holy, catholic, and apostolic Church, for those who live in chastity and holiness of life, for all civil authorities and our armed forces everywhere &mdash; grant them, O Lord, peaceful times, that we, in their tranquility, may lead a calm and peaceful life in all godliness and sanctity.</p>
+                    <p>Among the first be mindful, O Lord, of our Metropolitan {{ metropolitanName }}, whom do Thou grant Thy holy churches, in peace, safety, honor, health, and length of days, and rightly dividing the word of Thy Truth.</p><br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-primary">Congregants</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>And of all mankind.</p><br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>Be mindful, O Lord, of this city in which we dwell, and of every city and countryside, and of those who in faith dwell in them. Be mindful, O Lord, of those who travel by sea, land, and air, of the sick, the suffering, captives, and their salvation. Be mindful, O Lord, of those who bear fruit and do good works in Thy holy churches, and who remember the poor, and upon us all send forth Thy mercies. And grant us with one mouth and one heart to glorify and praise Thine all-honorable and majestic name, of the Father, and of the Son, and of the Holy Spirit, now and ever, and unto ages of ages.</p><br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-primary">Congregants</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>Amen.</p><br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-danger">{{ priestName }}</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>And the mercies of our great God and Savior Jesus Christ be with all of you.</p><br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <h4><span class="label label-primary">Congregants</span></h4>
+                </div>
+                <div class="col-md-10">
+                    <p>And with thy spirit.</p><br />
+                </div>
+            </div>
         </div>
         <!-- next -->
     </div>
