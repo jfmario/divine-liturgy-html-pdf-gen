@@ -3,7 +3,7 @@
 <head>
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/yeti/bootstrap.min.css" rel="stylesheet">
 
-    <title>OXDB: Divine Liturgy PDF Generator</title>
+    <title>OXDB: Divine Liturgy Generator</title>
 </head>
 <body>
     
@@ -18,10 +18,41 @@
     </nav>
     
     <div class="container">
+        <div class="col-md-8">
+            
+            <div class="page-header">
+                <h2>DIVINE LITURGY HTML GENERATOR v0.0.0 (Testing Alpha)</h2>
+            </div>
+            
+            <p>Thank you for visiting the Divine Liturgy HTML Generator by John Marion. The intent of this site is to allow you to input certain local variables, and then produce the correct text of the Divine Liturgy of St John Chrysostom for any given day. An option to export to the PDF format is in the works.</p>
+            
+            <div class="page-header">
+                <h3>HOW TO USE</h3>
+            </div>
+            
+            <p>The Settings page allows you to change information specific to your parish, turn certain optional portiond on or off, and list names of people for inclusion in the output. Once you have made changes, you must hit 'Apply' in order for you changes to be reflected in the final output. Settings will be saved in your browser. On this page, select a date and hit 'HTML page' to view the output as a webpage or 'PDF' to get a downloadable PDF.</p>
+        </div>
+        <div class="col-md-4">
+            
+            <label for="datePicker" class="control-label">Pick a Date (mm/dd/yyyy):</label>
+            
+            <input id="datePicker" class="form-control" type="date">
+            
+            <div class="btn-group btn-group-justified">
+                <a class="btn btn-success" onclick="html()">HTML</a>
+            </div>
+            
+            <div class="page-header">
+                <h3>Acknowledgements</h3>
+            </div>
+            
+            <p>The Divine Liturgy PDF / HTML Generator is a project by John F. Marion. All ESV Scriptures are obtained using the ESV's Bible Web Service. All KJV Scriptures are obtained using the Biblia Web Service. Please e-mail john@johnfmarion.com to report any inaccuracies.</p>
+        </div>
         
     </div>
     
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="js/bs-help.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/export.js"></script>
 </body>
